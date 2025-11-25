@@ -27,9 +27,7 @@ def get_post_details(page, url):
         except:
             pass 
 
-        # --- STRATEGI 1: META TAGS ---
-        
-        # Ambil Caption dari Meta Description
+
         try:
             meta_desc = page.locator('meta[property="og:description"]').get_attribute("content")
             if meta_desc:
@@ -41,7 +39,7 @@ def get_post_details(page, url):
         except:
             pass
 
-        # Ambil Username dari Meta Title
+
         try:
             meta_title = page.locator('meta[property="og:title"]').get_attribute("content")
             if meta_title and "(@" in meta_title:
@@ -51,9 +49,6 @@ def get_post_details(page, url):
         except:
             pass
 
-        # --- STRATEGI 2: HTML SELECTORS (Fallback) ---
-        
-        # Jika caption masih kosong
         if not data["caption"]:
             try:
                 selectors = ["h1", "span._aacl", "div[data-testid='post-comment-root'] span"]
@@ -66,14 +61,13 @@ def get_post_details(page, url):
             except:
                 pass
 
-        # JIKA USERNAME MASIH KOSONG, CARI DI HEADER (FIX TERBAIK)
         if not data["username"]:
             try:
                 # Cari link profil di dalam header yang memiliki role='link'
                 username_element = page.locator("header a[role='link']").first 
                 if username_element.count() > 0:
                     data["username"] = username_element.inner_text()
-                    # Fallback untuk username jika inner_text kosong: ambil dari URL
+
                     if not data["username"]:
                         href = username_element.get_attribute('href')
                         if href:
@@ -81,7 +75,7 @@ def get_post_details(page, url):
             except:
                 pass
 
-        # Ambil Timestamp 
+
         try:
             time_el = page.locator("time").first
             if time_el.count() > 0:
@@ -89,7 +83,7 @@ def get_post_details(page, url):
         except:
             pass
 
-        # CEK VIDEO UNTUK FILTERING
+
         try:
             # Jika elemen video atau Reels container ada, set is_video = True
             if page.locator("video").count() > 0 or page.locator("div[role='presentation'][tabindex='-1']").count() > 0:
@@ -104,7 +98,7 @@ def get_post_details(page, url):
 
 def scrape_hashtag(hashtag, limit=10, cookies_file=None):
     results = []
-    photo_results = [] # Tempat menampung hasil yang sudah difilter
+    photo_results = [] 
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
@@ -121,7 +115,7 @@ def scrape_hashtag(hashtag, limit=10, cookies_file=None):
 
         page = context.new_page()
 
-        # TAHAP 1: KUMPULKAN LINK
+
         print(f"[1/2] Scanning hashtag #{hashtag}...")
         url = f"https://www.instagram.com/explore/tags/{hashtag}/"
         page.goto(url, wait_until="domcontentloaded")
@@ -129,7 +123,7 @@ def scrape_hashtag(hashtag, limit=10, cookies_file=None):
 
         collected_links = set()
         
-        while len(collected_links) < limit * 1.5: # Ambil sedikit lebih banyak untuk cadangan filter
+        while len(collected_links) < limit * 1.5: 
             nodes = page.locator("a[href*='/p/']").all()
             
             for node in nodes:
@@ -145,13 +139,13 @@ def scrape_hashtag(hashtag, limit=10, cookies_file=None):
 
         print(f"[INFO] Berhasil dapat {len(collected_links)} link. Sekarang ambil detail...")
 
-        # TAHAP 2: BUKA SATU PER SATU UNTUK AMBIL CAPTION
+
         for index, link in enumerate(collected_links):
             print(f"[2/2] Scraping {index+1}/{len(collected_links)}: {link}")
             
             details = get_post_details(page, link)
             
-            # Gabungkan data
+
             post_data = {
                 "url": link,
                 "caption": details["caption"],
@@ -164,10 +158,10 @@ def scrape_hashtag(hashtag, limit=10, cookies_file=None):
         
         browser.close()
 
-    # --- TAHAP 3: FILTERING HASIL AKHIR ---
+
     print(f"[3/3] Mulai filtering hasil (Hanya ambil foto)...")
     for post in results:
-        # Hanya masukkan ke hasil akhir jika is_video adalah False DAN limit belum tercapai
+
         if not post["is_video"] and len(photo_results) < limit:
             # Hapus flag is_video dari output akhir
             del post["is_video"]
