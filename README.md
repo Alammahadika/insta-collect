@@ -62,56 +62,90 @@ We plan to expand the capabilities of Insta-Collect to include:
 
 | Argument | Description | Required? | Example |
 | :--- | :--- | :--- | :--- |
-| `--tag` | The hashtag to scrape (without `#`). | Yes | `jokowi` |
-| `--limit` | Number of PHOTO posts to scrape. | No (Default: 10) | `50` |
+| `--tag` | The hashtag to scrape (without `#`). | Yes | `gibran` |
+| `--limit` | Number of PHOTO posts to scrape. | No (Default: 10) | `10` |
 | `--cookie` | Path to `cookies.json`. **Highly recommended.** | No | `cookies.json` |
 
 ### Example Usage
 
 **Scraping Photo posts with Cookies:**
 ```bash
-python cli.py --tag jokowi --limit 5 --cookie cookies.json
+python cli.py --tag gibran --limit 10 --cookie cookies.json
 ```
 
 ```json
 [
   {
-    "url": "[https://www.instagram.com/p/DLOvv7tP4ra/](https://www.instagram.com/p/DLOvv7tP4ra/)",
-    "caption": "@jokowi baru-baru ini diduga mengalami alergi kulit setelah kunjungan ke Vatikan... [Dipotong untuk kerapian]",
+    "url": "https://www.instagram.com/p/DPQa9CnAAMN/",
+    "caption": "Selamat Ulang Tahun mas Gibran @gibran_rakabuming Wakil Presiden Republik Indonesia 🇲🇨🇲🇨🇲🇨. \n\nDoa terbaik buat mas Gibran, sehat2, bahagia dan sukses selalu 🙏🙏🙏\n\n#gibran #gibranrakabumingraka #wapres #wakilpresiden\".",
     "username": null,
-    "timestamp": "2025-06-23T04:46:39.000Z",
-    "source_tag": "jokowi"
+    "timestamp": "2025-10-01T06:29:00.000Z",
+    "source_tag": "gibran"
   },
   {
-    "url": "[https://www.instagram.com/p/DRdp_HDkjxI/](https://www.instagram.com/p/DRdp_HDkjxI/)",
+    "url": "https://www.instagram.com/p/DRW6FsZkqgl/",
     "caption": null,
     "username": null,
-    "timestamp": null,
-    "source_tag": "jokowi"
+    "timestamp": "2025-11-22T11:59:18.000Z",
+    "source_tag": "gibran"
   },
   {
-    "url": "[https://www.instagram.com/p/DRb8qWjjCBf/](https://www.instagram.com/p/DRb8qWjjCBf/)",
-    "caption": "@jokowi baru-baru ini diduga mengalami alergi kulit setelah kunjungan ke Vatikan... [Dipotong untuk kerapian]",
+    "url": "https://www.instagram.com/p/DKetH71yBnZ/",
+    "caption": "Forum Purnawirawan TNI mengajukan surat usulan pemakzulan Gibran Rakabuming Raka ke DPR pada 2 Juni 2025. Mereka menilai pencalonan Gibran sebagai wakil presiden memunculkan potensi konflik kepentingan, merujuk pada keterlibatan Anwar Usman dalam putusan MK No. 90/PUU-XXI/2023.\n\nDalam surat tersebut, mereka mendorong MPR memproses pemakzulan sesuai ketentuan Pasal 7A dan 7B UUD 1945. Selain aspek hukum, disoroti pula isu kepatutan dan moralitas, termasuk latar belakang pendidikan, pengalaman, serta dugaan keterlibatan dalam akun media sosial dan laporan KKN yang sedang ditangani KPK.\n\nSementara itu, mantan Presiden Jokowi, Ketua MPR Ahmad Muzani, dan Sekjen Partai Golkar Sarmuji menegaskan bahwa Gibran adalah wakil presiden sah berdasarkan hasil Pemilu 2024. Pemakzulan sendiri baru dapat dimulai jika disetujui oleh dua pertiga anggota DPR dalam rapat paripurna, yang menjadi tantangan tersendiri secara politis.\n\nBaca selengkapnya di kuncihukum.com\n\n#KunciHukum #JawabanAkurat #InformasiTepat #Pemakzulan #Gibran #DPR\".",
     "username": null,
-    "timestamp": null,
-    "source_tag": "jokowi"
+    "timestamp": "2025-06-04T13:01:37.000Z",
+    "source_tag": "gibran"
   },
   {
-    "url": "[https://www.instagram.com/p/DFMPnM5SJ0r/](https://www.instagram.com/p/DFMPnM5SJ0r/)",
-    "caption": "@jokowi baru-baru ini diduga mengalami alergi kulit setelah kunjungan ke Vatikan... [Dipotong untuk kerapian]",
+    "url": "https://www.instagram.com/p/DRd2ZCgkcjB/",
+    "caption": null,
     "username": null,
-    "timestamp": null,
-    "source_tag": "jokowi"
+    "timestamp": "2025-11-25T05:21:35.000Z",
+    "source_tag": "gibran"
   },
   {
-    "url": "[https://www.instagram.com/p/DRdrw5HkkJB/](https://www.instagram.com/p/DRdrw5HkkJB/)",
-    "caption": "Tapanuli Selatan di Bawah Langit yang Menangis: Jalan Amblas, Sungai Mengganas... [Dipotong untuk kerapian]",
+    "url": "https://www.instagram.com/p/DL304L9Cns9/",
+    "caption": "💯 Chasing constant comfort can slowly dull the fire within us that craves growth, adventure, and meaning. \n\nWhen we prioritize ease and safety above all else, we stop taking risks, stop dreaming boldly, and settle for a life that feels secure but empty. \n\nThe soul thrives on challenge and purpose, and too much comfort can suffocate that inner spark that makes us feel truly alive. \n\nComment your thoughts 💭...\n\nFollow @WiseSages for daily wisdom 🦉\n\n.\n.\n#khalilgibran #gibran #comfort #quotesandsayings #realtalk\".",
     "username": null,
-    "timestamp": "2025-11-25T03:08:48.000Z",
-    "source_tag": "jokowi"
+    "timestamp": "2025-07-09T03:40:21.000Z",
+    "source_tag": "gibran"
+  },
+  {
+    "url": "https://www.instagram.com/p/DRUHz7ckXot/",
+    "caption": null,
+    "username": null,
+    "timestamp": "2025-11-21T10:01:29.000Z",
+    "source_tag": "gibran"
+  },
+  {
+    "url": "https://www.instagram.com/p/DJ6FfXryw-i/",
+    "caption": "(Berita selengkapnya cek IG Stories @kompascom)\n\nPolitikus Partai Solidaritas Indonesia (PSI), Ade Armando, menilai bahwa Gibran Rakabuming Raka adalah wakil presiden (wapres) terbaik sepanjang sejarah Indonesia. \n\nAde menilai kehadiran Gibran sebagai wapres tidak seharusnya dilihat dari statusnya sebagai putra mantan Presiden Joko Widodo (Jokowi). \n\nIa meyakini Gibran adalah pendorong elektabilitas Prabowo pada Pemilu 2024.\n\n“Nah, begitu juga saya ingin orang melihat, eh naiknya Gibran itu, diangkatnya Gibran sebagai wapres, jangan dilihat karena dia anak Jokowi sebagai dinasti. Gibran itu adalah faktor yang menaikkan suaranya Pak Prabowo,” ujar Ade dalam Podcast Gaspol Kompas.com, dikutip Rabu (21/5/2025). \n\nAde menyebut, Gibran telah menunjukkan sejumlah pencapaian yang signifikan. Dia pun memuji gaya komunikasi Gibran yang memanfaatkan media sosial untuk menyampaikan pesan kepada publik.\n\nPenulis: Tria Sutrisna\nEditor: Jessi Carina\n\n + #AdeArmando #Gibran #GibranRakabuming #Wapres #Gaspol\".",
+    "username": null,
+    "timestamp": "2025-05-21T07:41:11.000Z",
+    "source_tag": "gibran"
+  },
+  {
+    "url": "https://www.instagram.com/p/DRa7Q1kk7ak/",
+    "caption": null,
+    "username": null,
+    "timestamp": "2025-11-24T01:26:31.000Z",
+    "source_tag": "gibran"
+  },
+  {
+    "url": "https://www.instagram.com/p/CxWMwPsLuf6/",
+    "caption": "“If your heart is a volcano, how shall you expect flowers to bloom?”\n\n#khalilgibran #theprophet #gibran #poetry #quotes #love\".",
+    "username": null,
+    "timestamp": "2023-09-18T20:38:33.000Z",
+    "source_tag": "gibran"
+  },
+  {
+    "url": "https://www.instagram.com/p/DRdLXLNE3QZ/",
+    "caption": "🚨 INDONESIA MASUK MODE NEXT LEVEL!\n\nWapres Gibran ngomongin $Bitcoin & crypto di acara G20 Summit, dan ini bukan hal kecil. Indonesia nunjukin kalau kita nggak mau cuma jadi penonton kita mulai ikutan dalam pembahasan aset digital bareng negara-negara ekonomi terbesar dunia.\n\nLangkah ini jadi sinyal kuat kalau arah kebijakan Indonesia makin terbuka sama inovasi finansial dan potensi ekonomi baru dari crypto. Buat pelaku market lokal, ini semacam “lampu hijau” kalau game baru udah dimulai, dan Indonesia nggak mau ketinggalan.\n\nSimpelnya: ini bullish untuk adopsi. Dan kita akhirnya punya suara di meja besar.\n\n#indonesianews #bitcoin #gibran #cryptonews\".",
+    "username": null,
+    "timestamp": "2025-11-24T22:25:41.000Z",
+    "source_tag": "gibran"
   }
 ]
-
 
 
 ```
