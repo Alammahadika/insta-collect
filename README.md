@@ -1,4 +1,4 @@
-# insta-collect: Instagram Hashtag Scraper
+# insta-collect: Instagram Scraper
 
 A simple Python project using Playwright to collect Instagram post data based on hashtags. This project focuses only on *scrapping* **Photo/Carousel** posts to maintain data consistency.
 
