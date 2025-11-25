@@ -1,14 +1,39 @@
-# insta-collect: Instagram Scraper
+# Insta-Collect: Modular Instagram Data Collector
 
-A simple Python project using Playwright to collect Instagram post data based on hashtags. This project focuses only on *scrapping* **Photo/Carousel** posts to maintain data consistency.
+## Project Status: In Development
 
-##  Key Features
+This project is currently under active development. The core functionality for hashtag photo scraping is stable, but features for collecting comments, user data, and managing large-scale video/Reel scraping are planned for future releases.
 
-* **Accurate Scraping:** Captures Caption, Username, Timestamp, and Post URL.
-* **Content Filtering:** Automatically excludes Video/Reels posts.
-* **Session Mode:** Supports `cookies.json` to avoid the Login Wall.
-* **Output:** Saves results to JSON (and/or CSV) files.
+***
 
+## Project Overview
+
+Insta-Collect is a simple, modular Python project utilizing **Playwright** for web automation and data extraction from Instagram. The goal is to provide a versatile tool for collecting structured data for analysis and research purposes.
+
+The current focus is on building a robust method for retrieving photo-based posts via hashtags.
+
+***
+
+## Current Key Features (v1.0)
+
+* **Hashtag Scraping:** Core functionality for targeted data collection based on hashtags.
+* **Accurate Data Capture:** Collects **Caption**, **Username**, **Timestamp**, and **Post URL**.
+* **Content Filtering:** Automatically excludes Video and Reels content to maintain data consistency in photo-focused outputs.
+* **Session Management:** Supports using a `cookies.json` file to bypass the Instagram Login Wall and mitigate rate limits.
+* **Output:** Saves results to structured **JSON** files.
+
+***
+
+## Future Plans (Roadmap)
+
+We plan to expand the capabilities of Insta-Collect to include:
+
+* **Comment Scraping:** Retrieving all comments associated with a scraped post.
+* **User Profile Data:** Collecting biographical information and post metadata from specific user profiles.
+* **Video/Reel Support:** Implementing a separate, more complex logic to handle video-based content.
+* **CSV Output:** Adding an option to save data in CSV format.
+
+***
 ##  Setup and Installation
 
 1. **Clone Repository:**
