@@ -1,4 +1,4 @@
-# Insta-Collect: Modular Instagram Data Collector
+# insta-collect: Modular Instagram Data Collector
 
 ## Project Status: In Development
 
