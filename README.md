@@ -115,3 +115,18 @@ python cli.py --tag jokowi --limit 5 --cookie cookies.json
 
 
 ```
+
+
+
+***
+
+## Behind the Scenes: How the Scraper Works
+
+When executed, the script uses the Playwright browser to automate the following steps:
+
+1.  **Session Resumption:** Loads `cookies.json` to automatically resume your logged-in Instagram session.
+2.  **Hashtag Scan:** Navigates to the hashtag page and automatically scrolls to collect post links up to the specified limit.
+3.  **Data Extraction:** Visits each individual post URL and uses multiple strategies (Meta Tags and selectors) to scrape the Caption, Username, and Timestamp.
+4.  **Filtering:** Filters the final dataset to only include photo/carousel posts, removing all video content.
+
+***
