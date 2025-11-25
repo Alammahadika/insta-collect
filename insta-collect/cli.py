@@ -1,12 +1,12 @@
 import argparse
 import sys
 import os
-from src.saver import save_data # Pastikan saver.py ada
+from src.saver import save_data 
 
-# Trik agar folder src terbaca
+
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
-# Import scraper
+
 from src.scraper import scrape_hashtag
 
 def main():
@@ -17,7 +17,7 @@ def main():
 
     args = parser.parse_args()
 
-    # Cek apakah file cookie benar-benar ada
+
     cookies_path = args.cookie
     if cookies_path and not os.path.exists(cookies_path):
         print(f"[WARNING] File {cookies_path} tidak ditemukan! Menjalankan tanpa login...")
