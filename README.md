@@ -62,8 +62,8 @@ We plan to expand the capabilities of Insta-Collect to include:
 
 | Argument | Description | Required? | Example |
 | :--- | :--- | :--- | :--- |
-| `--tag` | The hashtag to scrape (without `#`). | Yes | `gibran` |
-| `--limit` | Number of PHOTO posts to scrape. | No (Default: 10) | `10` |
+| `--tag` | The hashtag to scrape (without `#`). | Yes | `jokowi` |
+| `--limit` | Number of PHOTO posts to scrape. | No (Default: 15) | `15` |
 | `--cookie` | Path to `cookies.json`. **Highly recommended.** | No | `cookies.json` |
 
 ### Example Usage
