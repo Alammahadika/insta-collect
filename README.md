@@ -70,80 +70,115 @@ We plan to expand the capabilities of Insta-Collect to include:
 
 **Scraping Photo posts with Cookies:**
 ```bash
-python cli.py --tag gibran --limit 10 --cookie cookies.json
+python cli.py --tag jokowi --limit 15 
 ```
 
 ```json
 [
-  {
-    "url": "https://www.instagram.com/p/DPQa9CnAAMN/",
-    "caption": "Selamat Ulang Tahun mas Gibran @gibran_rakabuming Wakil Presiden Republik Indonesia 🇲🇨🇲🇨🇲🇨. \n\nDoa terbaik buat mas Gibran, sehat2, bahagia dan sukses selalu 🙏🙏🙏\n\n#gibran #gibranrakabumingraka #wapres #wakilpresiden\".",
+ {
+    "url": "https://www.instagram.com/p/DSWAzXNk69T/",
+    "caption": "16 Desember 2025 - Ketum Rampai Nusantara Mardiansyah Semar @semarmardiansyah Kembali Bertemu Dengan Presiden ke-7 RI Joko Widodo @jokowi Sekaligus Dewan Pembina Rampai Nusantara di Kediaman Pribadi Jokowi di Solo, Jawa Tengah 🇮🇩\n\n#jokowi #mardiansyahsemar #semarmardiansyah #rampainusantara #jokowidodo #presidenke7jokowi #dewanpembinarampainusantara #presidenjokowi #gibran #gibranrakabumingraka #gibranrakabuming #ijazahjokowi #tuduhanijazahpalsujokowi\".",
     "username": null,
-    "timestamp": "2025-10-01T06:29:00.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2025-12-17T00:11:15.000Z",
+    "source_tag": "jokowi"
   },
   {
-    "url": "https://www.instagram.com/p/DRW6FsZkqgl/",
+    "url": "https://www.instagram.com/p/DP8p5mGEvEu/",
+    "caption": "Banyak isu yang menyebut IKN sebagai proyek mangkrak, namun wanita ini justru beri kesaksian yang berbeda. Saat berkunjung ke IKN, ia melihat sendiri bagaimana kota ini mempunyai infrastruktur yang rapi, modern, dan tertata dengan perencanaan yang matang. Ia pun membagikan sejumlah foto yang memperlihatkan kondisi sebenarnya di IKN.\n\nFoto: [Tiktok/ra.yuana]\n\n#infonetizone #ikn #nusantara #ibukota #jakarta #indonesia #jokowi #prabowo\".",
+    "username": null,
+    "timestamp": "2025-10-18T10:46:11.000Z",
+    "source_tag": "jokowi"
+  },
+  {
+    "url": "https://www.instagram.com/p/CRYyaSSlGa3/",
+    "caption": "YNTKS\n\n#viral_padamasanya \n\n#yntkts #ynt #yntktsmeme #yntkns #memeindonesia #memejokowi #jokowi #yanggatau\".",
+    "username": null,
+    "timestamp": "2021-07-16T12:03:12.000Z",
+    "source_tag": "jokowi"
+  },
+  {
+    "url": "https://www.instagram.com/p/DSfQ49aEXzV/",
+    "caption": "JOKOWI Sang maestro \nFlashback kebelakang\nFahri hamzah dan pks,dulu sekitar tahun 2014 an sampai 2019 an orang yang paling vokal mengkritik habis habisan tentang pak jokowi,tapi sekarang Alhamdulillah luluh lantah,akan kah roy suryo cs sama seperti fahri hamzah yang sekarang\nKita tunggu endingnya\n#jokowi\n#sangorkestra\".",
+    "username": null,
+    "timestamp": "2025-12-20T14:23:51.000Z",
+    "source_tag": "jokowi"
+  },
+  {
+    "url": "https://www.instagram.com/p/DSbmzWcE-JE/",
     "caption": null,
     "username": null,
-    "timestamp": "2025-11-22T11:59:18.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2025-12-19T04:18:22.000Z",
+    "source_tag": "jokowi"
   },
   {
-    "url": "https://www.instagram.com/p/DKetH71yBnZ/",
-    "caption": "Forum Purnawirawan TNI mengajukan surat usulan pemakzulan Gibran Rakabuming Raka ke DPR pada 2 Juni 2025. Mereka menilai pencalonan Gibran sebagai wakil presiden memunculkan potensi konflik kepentingan, merujuk pada keterlibatan Anwar Usman dalam putusan MK No. 90/PUU-XXI/2023.\n\nDalam surat tersebut, mereka mendorong MPR memproses pemakzulan sesuai ketentuan Pasal 7A dan 7B UUD 1945. Selain aspek hukum, disoroti pula isu kepatutan dan moralitas, termasuk latar belakang pendidikan, pengalaman, serta dugaan keterlibatan dalam akun media sosial dan laporan KKN yang sedang ditangani KPK.\n\nSementara itu, mantan Presiden Jokowi, Ketua MPR Ahmad Muzani, dan Sekjen Partai Golkar Sarmuji menegaskan bahwa Gibran adalah wakil presiden sah berdasarkan hasil Pemilu 2024. Pemakzulan sendiri baru dapat dimulai jika disetujui oleh dua pertiga anggota DPR dalam rapat paripurna, yang menjadi tantangan tersendiri secara politis.\n\nBaca selengkapnya di kuncihukum.com\n\n#KunciHukum #JawabanAkurat #InformasiTepat #Pemakzulan #Gibran #DPR\".",
+    "url": "https://www.instagram.com/p/DBawIn-S6OM/",
+    "caption": "😭😭😭🙏🏻🙏🏻🙏🏻\n•\nsc : tallyfication\n•\ncheck it out 👉🏻 ⌜ @RECEHTAGRAM ⌟ untuk postingan hiburan dan informasi lainnya yang sedang trending ✌🏻\n•\n#recehtagram #memes #indonesia #textpost #funny #mood #explore  #love #happy #2024 #photooftheday #memeoftheday #meme #ngakakkocak #dagelan #lucu #ngakak #lol #instagram #relate #jokowi\".",
     "username": null,
-    "timestamp": "2025-06-04T13:01:37.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2024-10-22T07:26:58.000Z",
+    "source_tag": "jokowi"
   },
   {
-    "url": "https://www.instagram.com/p/DRd2ZCgkcjB/",
+    "url": "https://www.instagram.com/p/DSmBmYmFHTt/",
     "caption": null,
     "username": null,
-    "timestamp": "2025-11-25T05:21:35.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2025-12-23T05:24:56.000Z",
+    "source_tag": "jokowi"
   },
   {
-    "url": "https://www.instagram.com/p/DL304L9Cns9/",
-    "caption": "💯 Chasing constant comfort can slowly dull the fire within us that craves growth, adventure, and meaning. \n\nWhen we prioritize ease and safety above all else, we stop taking risks, stop dreaming boldly, and settle for a life that feels secure but empty. \n\nThe soul thrives on challenge and purpose, and too much comfort can suffocate that inner spark that makes us feel truly alive. \n\nComment your thoughts 💭...\n\nFollow @WiseSages for daily wisdom 🦉\n\n.\n.\n#khalilgibran #gibran #comfort #quotesandsayings #realtalk\".",
+    "url": "https://www.instagram.com/p/DKgQsNCyXkZ/",
+    "caption": "Sindrom Stevens Johnson (SJS) mendadak menjadi perbincangan publik setelah mencuat dugaan bahwa Joko Widodo (Jokowi) mengidap penyakit autoimun langka ini. Dugaan tersebut muncul usai publik mencermati perubahan signifikan pada kondisi kulit wajah dan leher Jokowi dalam beberapa penampilan terakhirnya. \n\nSebelumnya, Ajudan pribadi Jokowi, Kompol Muhammad Fitriansyah mengatakan bahwa mantan presiden tersebut tidak dapat hadir pada upacara Hari Lahir Pancasila 2 Juni 2025 karena tengah mengidap penyakit kulit. “Beliau masih proses penyembuhan dari alergi kulit,” kata Muhammad Fitriansyah.\n\n \nMeski belum ada konfirmasi resmi, kemunculan bercak gelap dan iritasi kulit memunculkan spekulasi bahwa gejala tersebut berkaitan dengan SJS, suatu reaksi hipersensitivitas serius terhadap obat atau infeksi yang menyerang kulit dan selaput lendir. Penyakit ini tergolong langka namun berpotensi fatal jika tidak ditangani dengan cepat. \n\nhttps://lifestyle.sindonews.com/read/1576141/155/mengenal-sindrom-stevens-johnson-penyakit-langka-serius-yang-diduga-diidap-jokowi-1749082000\n\n#Sindonews #SindromStevensJohnson #Jokowi #SJS #JokoWidodo\".",
     "username": null,
-    "timestamp": "2025-07-09T03:40:21.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2025-06-05T03:30:12.000Z",
+    "source_tag": "jokowi"
   },
   {
-    "url": "https://www.instagram.com/p/DRUHz7ckXot/",
+    "url": "https://www.instagram.com/p/BqW_IJJAfMY/",
+    "caption": "Cuma Presiden Jokowi yang sedekat ini dengan rakyatnya.\n\n@Regran_ed from @jokowi_membangun - - Mengharukan 😭😭😭\n.\n.\n.\n.\n.\n#dukungjokowi #jokowi #jkw4p #2019pilihjokowi #2019jokowiaja #sahabatjokowi #jokowi2periode #2periode #jokowipresidenku #t3tapjokowi #2019t3tapjokowi #eramilenial #2019jokowilagi #memejokowi #jokowi #jokowimarufamin #2019pilihjokowi #irianajokowi  #jokowipresidenkitasemua #diasibukkerja #prestasijokowi #kinerjajokowi #pilpres2019 #merakyat #jokowipresidenku #pemimpin #jokowiforpresident #2019jokowiaja #2019tetapjokowi\".",
+    "username": null,
+    "timestamp": "2018-11-19T10:50:26.000Z",
+    "source_tag": "jokowi"
+  },
+  {
+    "url": "https://www.instagram.com/p/DRzLOqmEixB/",
+    "caption": "Tiga Pilar Republik \n\nSource : Tiktok @owi.bradpit\n\nIzinnn🙏\n\nFollow akun ini segera!!! Kenapa? Ya gpp follow aja. \n\n#memes #meme #memedaily #memeindo #memeid #memepage #memeasw #republicofmeme #memerelate #jokowi #prabowo #anisbaswedan #anakabah #culture #skena #outfit #ootd #4u #beranda #fyp\".",
+    "username": null,
+    "timestamp": "2025-12-03T11:27:48.000Z",
+    "source_tag": "jokowi"
+  },
+  {
+    "url": "https://www.instagram.com/p/CqVKxkOPFOo/",
+    "caption": "Aku menyebutnya tampan dan pemberani\n\nSource : FB\n\n#meme #jokowi #memeindonesia #kegoblokanunfaedah #kelakuanwarga62 #rabucringe #memecringe #asupanmeme #antijedagjedug #memeabsurd #hatihatidiinternet\".",
+    "username": null,
+    "timestamp": "2023-03-28T11:22:14.000Z",
+    "source_tag": "jokowi"
+  },
+  {
+    "url": "https://www.instagram.com/p/DPd5anfkhJ9/",
     "caption": null,
     "username": null,
-    "timestamp": "2025-11-21T10:01:29.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2025-10-06T12:05:18.000Z",
+    "source_tag": "jokowi"
   },
   {
-    "url": "https://www.instagram.com/p/DJ6FfXryw-i/",
-    "caption": "(Berita selengkapnya cek IG Stories @kompascom)\n\nPolitikus Partai Solidaritas Indonesia (PSI), Ade Armando, menilai bahwa Gibran Rakabuming Raka adalah wakil presiden (wapres) terbaik sepanjang sejarah Indonesia. \n\nAde menilai kehadiran Gibran sebagai wapres tidak seharusnya dilihat dari statusnya sebagai putra mantan Presiden Joko Widodo (Jokowi). \n\nIa meyakini Gibran adalah pendorong elektabilitas Prabowo pada Pemilu 2024.\n\n“Nah, begitu juga saya ingin orang melihat, eh naiknya Gibran itu, diangkatnya Gibran sebagai wapres, jangan dilihat karena dia anak Jokowi sebagai dinasti. Gibran itu adalah faktor yang menaikkan suaranya Pak Prabowo,” ujar Ade dalam Podcast Gaspol Kompas.com, dikutip Rabu (21/5/2025). \n\nAde menyebut, Gibran telah menunjukkan sejumlah pencapaian yang signifikan. Dia pun memuji gaya komunikasi Gibran yang memanfaatkan media sosial untuk menyampaikan pesan kepada publik.\n\nPenulis: Tria Sutrisna\nEditor: Jessi Carina\n\n + #AdeArmando #Gibran #GibranRakabuming #Wapres #Gaspol\".",
-    "username": null,
-    "timestamp": "2025-05-21T07:41:11.000Z",
-    "source_tag": "gibran"
-  },
-  {
-    "url": "https://www.instagram.com/p/DRa7Q1kk7ak/",
+    "url": "https://www.instagram.com/p/DSfCUY5kzoX/",
     "caption": null,
     "username": null,
-    "timestamp": "2025-11-24T01:26:31.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2025-12-20T12:16:32.000Z",
+    "source_tag": "jokowi"
   },
   {
-    "url": "https://www.instagram.com/p/CxWMwPsLuf6/",
-    "caption": "“If your heart is a volcano, how shall you expect flowers to bloom?”\n\n#khalilgibran #theprophet #gibran #poetry #quotes #love\".",
+    "url": "https://www.instagram.com/p/DMjtOnAqW3y/",
+    "caption": "Jokowi dan Iriana tinggalkan kediaman di Solo pagi ini. Saat ditanya tujuannya, ia hanya menjawab singkat: \"Ke Jogja.\" \n-\n- \n#Jokowi #Solo #Yogyakarta #mdkan\".",
     "username": null,
-    "timestamp": "2023-09-18T20:38:33.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2025-07-26T04:40:42.000Z",
+    "source_tag": "jokowi"
   },
   {
-    "url": "https://www.instagram.com/p/DRdLXLNE3QZ/",
-    "caption": "🚨 INDONESIA MASUK MODE NEXT LEVEL!\n\nWapres Gibran ngomongin $Bitcoin & crypto di acara G20 Summit, dan ini bukan hal kecil. Indonesia nunjukin kalau kita nggak mau cuma jadi penonton kita mulai ikutan dalam pembahasan aset digital bareng negara-negara ekonomi terbesar dunia.\n\nLangkah ini jadi sinyal kuat kalau arah kebijakan Indonesia makin terbuka sama inovasi finansial dan potensi ekonomi baru dari crypto. Buat pelaku market lokal, ini semacam “lampu hijau” kalau game baru udah dimulai, dan Indonesia nggak mau ketinggalan.\n\nSimpelnya: ini bullish untuk adopsi. Dan kita akhirnya punya suara di meja besar.\n\n#indonesianews #bitcoin #gibran #cryptonews\".",
+    "url": "https://www.instagram.com/p/DKeRtfSJXkS/",
+    "caption": "Misteri sakit Pak Jokowi? 🤔💭\n\n#Pancasila #JokoWidodo #Jokowi #HarlahPancasila #HariLahirPancasila #alergikulit #pinterpolitik #infografis #politikindonesia #beritapolitik #beritapolitikterkini\".",
     "username": null,
-    "timestamp": "2025-11-24T22:25:41.000Z",
-    "source_tag": "gibran"
+    "timestamp": "2025-06-04T09:00:34.000Z",
+    "source_tag": "jokowi"
   }
 ]
 
