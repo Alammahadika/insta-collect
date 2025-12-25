@@ -278,3 +278,9 @@ This output is immediately usable for:
 - Output filenames are generated automatically  
 - Preview mode does not affect saved data  
 - This feature is currently **experimental** and may evolve in future releases  
+
+## Ethical Use Notice
+
+This tool is intended strictly for academic research, journalism, and public-interest analysis.
+Users are responsible for complying with Instagram’s Terms of Service and applicable laws.
+
