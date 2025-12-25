@@ -34,44 +34,56 @@ We plan to expand the capabilities of Insta-Collect to include:
 * **CSV Output:** Adding an option to save data in CSV format.
 
 ***
-##  Setup and Installation
+## Setup and Installation
 
-1. **Clone Repository:**
-    ```bash
-    git clone https://github.com/YOUR_USERNAME/insta-collect.git
-    cd insta-collect
-    ```
+Install **insta-collect** using `pip`:
 
-2. **Install Python Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Make sure `requirements.txt` contains `playwright` and `argparse`)*
+```bash
+pip install insta-collect
+```
 
-3. **Install Playwright Browser:**
-    ```bash
-    playwright install
-    ```
+### Playwright Setup (Required)
 
-4. **Prepare Cookies (Important!):**
-    To avoid getting blocked (`null` data) when visiting many posts, you **must** use a logged-in session.
-    * Save the cookie file from your logged-in Instagram browser session into `cookies.json` in the root directory.
-    * **Warning:** Add this file to `.gitignore` so your credentials are not uploaded to GitHub!
+`insta-collect` relies on **Playwright** for browser automation.  
+After installation, install the required browser binaries once:
 
-##  How to Run the Scraper
+```bash
+playwright install
+```
 
-| Argument | Description | Required? | Example |
-| :--- | :--- | :--- | :--- |
-| `--tag` | The hashtag to scrape (without `#`). | Yes | `jokowi` |
-| `--limit` | Number of PHOTO posts to scrape. | No (Default: 15) | `15` |
-| `--cookie` | Path to `cookies.json`. **Highly recommended.** | No | `cookies.json` |
+### Prepare Cookies (Highly Recommended)
+
+To avoid being blocked or receiving `null` data when scraping many posts, it is strongly recommended to use a logged-in Instagram session.
+
+Steps:
+
+- Export your Instagram session cookies from your browser
+- Save the file as `cookies.json`
+- Place it in your working directory
+
+**Important:**  
+Add `cookies.json` to `.gitignore` to prevent leaking credentials.
+
+---
+
+## How to Run the Scraper
+
+Once installed, the scraper is available as a **CLI command**.
+
+### Available Arguments
+
+| Argument | Description | Required | Example |
+|--------|------------|----------|---------|
+| `--tag` | Hashtag to scrape (without `#`) | Yes | `jokowi` |
+| `--limit` | Number of PHOTO posts to scrape | No (default: 15) | `15` |
+| `--cookie` | Path to `cookies.json` | No (recommended) | `cookies.json` |
 
 ### Example Usage
 
-**Scraping Photo posts with Cookies:**
 ```bash
-python cli.py --tag jokowi --limit 15 
+insta-collect --tag jokowi --limit 15 --cookie cookies.json
 ```
+
 
 ```json
 [
