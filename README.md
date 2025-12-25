@@ -199,3 +199,82 @@ When executed, the script uses the Playwright browser to automate the following 
 4.  **Filtering:** Filters the final dataset to only include photo/carousel posts, removing all video content.
 
 ***
+
+
+## Comment Collection from Saved HTML (Experimental)
+
+In addition to live scraping via Playwright, **Insta-Collect** also supports parsing Instagram comments directly from a previously saved HTML file.
+
+This feature is useful when:
+- You already have archived Instagram post HTML files
+- You want to avoid repeated requests to Instagram
+- You need fast, offline comment extraction for analysis
+
+### Supported Outputs
+- **JSON** (default)
+- **XLSX (Excel)**  
+Both files are saved automatically without additional flags.
+
+---
+
+## How to Collect Comments from HTML
+
+### Example Usage
+
+```bash
+python3 insta-collect.py kimjongun.html --preview 34
+```
+
+### Terminal Output
+
+```text
+[+] Total entries saved: 119
+[+] JSON output: instagram_comments.json
+[+] XLSX output: instagram_comments.xlsx
+
+--- PREVIEW ---
+1. @brics_countries: 📰 BREAKING NEWS: North Korea Accuses Israel of War Crimes in Gaza 🇰🇵🇮🇱🇵🇸
+2. @brics_countries: 📰 BREAKING NEWS: North Korea Accuses Israel of War Crimes in Gaza 🇰🇵🇮🇱🇵🇸 North Korea has strongly con...
+3. @karldavid801: Coming from him is hilarious 😂
+4. @minoughm: 🙏🙏🙏🙏🙏🙏❤️❤️❤️❤️
+5. @nowakb072: Jeśli to prawda to po raz pierwszy biję im brawo
+6. @santucci_3.0: Sorry mas quem é Coreia do Norte para falar em genocídio??
+7. @akhmedovarsen47: 🇵🇸🇵🇸🇵🇸🇵🇸🇵🇸🤲🤲🤲🤲🤲
+8. @dn.9795: So now you adore him? Yesterday all of you thought he is one of the bad leaders ever...
+9. @carolina17181922: Jamás pensé en estar de acuerdo con corea del norte en algo 💔
+10. @mahdi.14almahdi: Free free palestine 🌱🍉
+...
+34. @michael.croy: As long as the 🇺🇸 USA continue giving Israel an average of $10m...
+```
+
+### Output Files
+
+After execution, the following files are generated automatically:
+
+- `instagram_comments.json`
+- `instagram_comments.xlsx`
+
+### Data Fields
+
+Each comment entry contains structured fields such as:
+
+- `username`
+- `comment_text`
+- `timestamp` (if available)
+- `source_file`
+
+### Use Cases
+
+This output is immediately usable for:
+
+- Qualitative discourse analysis  
+- Sentiment analysis  
+- Network / actor mapping  
+- Archival research workflows  
+
+### Notes
+
+- No Bash scripting or manual file handling is required  
+- Output filenames are generated automatically  
+- Preview mode does not affect saved data  
+- This feature is currently **experimental** and may evolve in future releases  
