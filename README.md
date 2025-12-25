@@ -1,4 +1,4 @@
-# insta-collect: Modular Instagram Data Collector
+# instacollect: Modular Instagram Data Collector
 
 ## Project Status: In Development
 
@@ -36,10 +36,10 @@ We plan to expand the capabilities of Insta-Collect to include:
 ***
 ## Setup and Installation
 
-Install **insta-collect** using `pip`:
+Install **instacollect** using `pip`:
 
 ```bash
-pip install insta-collect
+pip install instacollect
 ```
 
 ### Playwright Setup (Required)
@@ -81,7 +81,7 @@ Once installed, the scraper is available as a **CLI command**.
 ### Example Usage
 
 ```bash
-insta-collect --tag jokowi --limit 15 --cookie cookies.json
+instacollect --tag jokowi --limit 15 --cookie cookies.json
 ```
 
 
@@ -234,7 +234,7 @@ Both files are saved automatically without additional flags.
 ### Example Usage
 
 ```bash
-python3 insta-collect.py kimjongun.html --preview 34
+python3 instacollect.py kimjongun.html --preview 34
 ```
 
 ### Terminal Output
