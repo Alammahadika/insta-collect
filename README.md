@@ -234,7 +234,7 @@ Both files are saved automatically without additional flags.
 ### Example Usage
 
 ```bash
-python3 instacollect.py kimjongun.html --preview 34
+python3 insta-collect.py kimjongun.html --preview 34
 ```
 
 ### Terminal Output
