@@ -41,7 +41,7 @@ Install **insta-collect** using `pip`:
 
 ```bash
 pip install insta-collect-cli
-
+```
 
 ### Playwright Setup (Required)
 
