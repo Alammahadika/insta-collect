@@ -34,13 +34,14 @@ We plan to expand the capabilities of Insta-Collect to include:
 * **CSV Output:** Adding an option to save data in CSV format.
 
 ***
+
 ## Setup and Installation
 
-Install **instacollect** using `pip`:
+Install **insta-collect** using `pip`:
 
 ```bash
-pip install instacollect
-```
+pip install insta-collect-cli
+
 
 ### Playwright Setup (Required)
 
