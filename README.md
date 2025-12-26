@@ -46,7 +46,10 @@ We plan to expand the capabilities of Insta-Collect to include:
 ## Setup and Installation
 
 Install **insta-collect** using `pip`:
-
+```bash
+pip install insta-collect
+```
+### or
 ```bash
 pip install git+https://github.com/Alammahadika/insta-collect.git
 ```
