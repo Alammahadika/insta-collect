@@ -40,7 +40,7 @@ We plan to expand the capabilities of Insta-Collect to include:
 Install **insta-collect** using `pip`:
 
 ```bash
-pip install insta-collect-cli
+pip install git+https://github.com/Alammahadika/insta-collect.git
 ```
 
 ### Playwright Setup (Required)
