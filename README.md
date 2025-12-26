@@ -31,7 +31,7 @@ We plan to expand the capabilities of Insta-Collect to include:
 * **Comment Scraping:** Retrieving all comments associated with a scraped post.
 * **User Profile Data:** Collecting biographical information and post metadata from specific user profiles.
 * **Video/Reel Support:** Implementing a separate, more complex logic to handle video-based content.
-* **CSV Output:** Adding an option to save data in CSV format.
+* **CSV & XLXS Output:** Adding an option to save data in CSV and XLSX format.
 
 ***
 
@@ -80,9 +80,11 @@ Once installed, the scraper is available as a **CLI command**.
 | `--cookie` | Path to `cookies.json` | No (recommended) | `cookies.json` |
 
 ### Example Usage
-
 ```bash
-instacollect --tag jokowi --limit 15 --cookie cookies.json
+cd /Users/mymac/Desktop/insta-collect
+```
+```bash
+python3 -m insta_collect.cli --tag jokowi --limit 15 
 ```
 
 
@@ -234,6 +236,9 @@ Both files are saved automatically without additional flags.
 
 ### Example Usage
 
+```bash
+cd /Users/mymac/Desktop/insta-collect/insta_collect
+```
 ```bash
 python3 insta-collect.py kimjongun.html --preview 34
 ```
