@@ -34,6 +34,14 @@ We plan to expand the capabilities of Insta-Collect to include:
 * **CSV & XLXS Output:** Adding an option to save data in CSV and XLSX format.
 
 ***
+## Naming Conventions: _ vs - in Python Projects
+| Context | Use | Example |
+|------|------|------|
+| Package name (PyPI / GitHub) | `-` (hyphen) | insta-collect |
+| Python package directory | `_` (underscore) | insta_collect |
+| Python import statement | `_` (underscore) | import insta_collect |
+| CLI execution via module | `_` (underscore) | python -m insta_collect.cli |
+| Script / file name | flexible | insta-collect.py |
 
 ## Setup and Installation
 
