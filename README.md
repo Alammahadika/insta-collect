@@ -95,7 +95,7 @@ Once installed, the scraper is available as a **CLI command**.
 cd /Users/mymac/Desktop/insta-collect
 ```
 ```bash
-python3 -m insta_collect.cli --tag jokowi --limit 15 
+insta-collect --tag jokowi --limit 15
 ```
 
 
