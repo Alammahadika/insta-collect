@@ -4,7 +4,7 @@
 
 This project is currently under active development. The core functionality for hashtag photo scraping is stable, but features for collecting comments, user data, and managing large-scale video/Reel scraping are planned for future releases.
 
-------------------------------------------------------------------------
+***
 
 ## Project Overview
 
@@ -12,59 +12,54 @@ Insta-Collect is a simple, modular Python project utilizing **Playwright** for w
 
 The current focus is on building a robust method for retrieving photo-based posts via hashtags.
 
-------------------------------------------------------------------------
+***
 
 ## Current Key Features (v1.0)
 
--   **Hashtag Scraping:** Core functionality for targeted data collection based on hashtags.
--   **Accurate Data Capture:** Collects **Caption**, **Username**, **Timestamp**, and **Post URL**.
--   **Content Filtering:** Automatically excludes Video and Reels content to maintain data consistency in photo-focused outputs.
--   **Session Management:** Supports using a `cookies.json` file to bypass the Instagram Login Wall and mitigate rate limits.
--   **Output:** Saves results to structured **JSON** files.
+* **Hashtag Scraping:** Core functionality for targeted data collection based on hashtags.
+* **Accurate Data Capture:** Collects **Caption**, **Username**, **Timestamp**, and **Post URL**.
+* **Content Filtering:** Automatically excludes Video and Reels content to maintain data consistency in photo-focused outputs.
+* **Session Management:** Supports using a `cookies.json` file to bypass the Instagram Login Wall and mitigate rate limits.
+* **Output:** Saves results to structured **JSON** files.
 
-------------------------------------------------------------------------
+***
 
 ## Future Plans (Roadmap)
 
 We plan to expand the capabilities of Insta-Collect to include:
 
--   **Comment Scraping:** Retrieving all comments associated with a scraped post.
--   **User Profile Data:** Collecting biographical information and post metadata from specific user profiles.
--   **Video/Reel Support:** Implementing a separate, more complex logic to handle video-based content.
--   **CSV & XLXS Output:** Adding an option to save data in CSV and XLSX format.
+* **Comment Scraping:** Retrieving all comments associated with a scraped post.
+* **User Profile Data:** Collecting biographical information and post metadata from specific user profiles.
+* **Video/Reel Support:** Implementing a separate, more complex logic to handle video-based content.
+* **CSV & XLXS Output:** Adding an option to save data in CSV and XLSX format.
 
-------------------------------------------------------------------------
-
-## Naming Conventions: \_ vs - in Python Projects
-
-| Context                      | Use              | Example                     |
-|------------------------|------------------------|------------------------|
-| Package name (PyPI / GitHub) | `-` (hyphen)     | insta-collect               |
-| Python package directory     | `_` (underscore) | insta_collect               |
-| Python import statement      | `_` (underscore) | import insta_collect        |
-| CLI execution via module     | `_` (underscore) | python -m insta_collect.cli |
-| Script / file name           | flexible         | insta-collect.py            |
+***
+## Naming Conventions: _ vs - in Python Projects
+| Context | Use | Example |
+|------|------|------|
+| Package name (PyPI / GitHub) | `-` (hyphen) | insta-collect |
+| Python package directory | `_` (underscore) | insta_collect |
+| Python import statement | `_` (underscore) | import insta_collect |
+| CLI execution via module | `_` (underscore) | python -m insta_collect.cli |
+| Script / file name | flexible | insta-collect.py |
 
 ## Setup and Installation
 
 Install **insta-collect** using `pip`:
-
-``` bash
+```bash
 pip install insta-collect
 ```
-
 ### or
-
-``` bash
+```bash
 pip install git+https://github.com/Alammahadika/insta-collect.git
 ```
 
 ### Playwright Setup (Required)
 
-`insta-collect` relies on **Playwright** for browser automation.\
+`insta-collect` relies on **Playwright** for browser automation.  
 After installation, install the required browser binaries once:
 
-``` bash
+```bash
 playwright install
 ```
 
@@ -74,14 +69,14 @@ To avoid being blocked or receiving `null` data when scraping many posts, it is 
 
 Steps:
 
--   Export your Instagram session cookies from your browser
--   Save the file as `cookies.json`
--   Place it in your working directory
+- Export your Instagram session cookies from your browser
+- Save the file as `cookies.json`
+- Place it in your working directory
 
-**Important:**\
+**Important:**  
 Add `cookies.json` to `.gitignore` to prevent leaking credentials.
 
-------------------------------------------------------------------------
+---
 
 ## How to Run the Scraper
 
@@ -89,23 +84,22 @@ Once installed, the scraper is available as a **CLI command**.
 
 ### Available Arguments
 
-| Argument   | Description                     | Required         | Example        |
-|-----------------|---------------------|------------------|-----------------|
-| `--tag`    | Hashtag to scrape (without `#`) | Yes              | `jokowi`       |
-| `--limit`  | Number of PHOTO posts to scrape | No (default: 15) | `15`           |
-| `--cookie` | Path to `cookies.json`          | No (recommended) | `cookies.json` |
+| Argument | Description | Required | Example |
+|--------|------------|----------|---------|
+| `--tag` | Hashtag to scrape (without `#`) | Yes | `jokowi` |
+| `--limit` | Number of PHOTO posts to scrape | No (default: 15) | `15` |
+| `--cookie` | Path to `cookies.json` | No (recommended) | `cookies.json` |
 
 ### Example Usage
-
-``` bash
+```bash
 cd /Users/mymac/Desktop/insta-collect
 ```
-
-``` bash
-python3 -m insta_collect.cli --tag jokowi --limit 15 
+```bash
+insta-collect --tag jokowi --limit 15
 ```
 
-``` json
+
+```json
 [
  {
     "url": "https://www.instagram.com/p/DSWAzXNk69T/",
@@ -214,9 +208,12 @@ python3 -m insta_collect.cli --tag jokowi --limit 15
   }
 ]
 
+
 ```
 
-------------------------------------------------------------------------
+
+
+***
 
 ## Behind the Scenes: How the Scraper Works
 
@@ -227,37 +224,38 @@ When executed, the script uses the Playwright browser to automate the following 
 3.  **Data Extraction:** Visits each individual post URL and uses multiple strategies (Meta Tags and selectors) to scrape the Caption, Username, and Timestamp.
 4.  **Filtering:** Filters the final dataset to only include photo/carousel posts, removing all video content.
 
-------------------------------------------------------------------------
+***
 
-## Comment Collection from Saved HTML (Experimental)
-
-In addition to live scraping via Playwright, **Insta-Collect** also supports parsing Instagram comments directly from a previously saved HTML file.
-
-This feature is useful when: - You already have archived Instagram post HTML files - You want to avoid repeated requests to Instagram - You need fast, offline comment extraction for analysis
-
-### Supported Outputs
-
--   **JSON** (default)
--   **XLSX (Excel)**\
-    Both files are saved automatically without additional flags.
-
-------------------------------------------------------------------------
 
 ## How to Collect Comments from HTML
 
+In addition to live scraping via Playwright, **Insta-Collect** also supports parsing Instagram comments directly from a previously saved HTML file.
+
+This feature is useful when:
+- Download the Instagram HTML file you want to analyze (e.g., kimjongun.html).
+- Place it in a folder where you have read/write access (e.g., Desktop, Downloads, or a dedicated project folder).
+- Run the CLI from the folder containing your HTML file:
+
+### Supported Outputs
+- **JSON** (default)
+- **XLSX (Excel)**  
+Both files are saved automatically without additional flags.
+
+---
+
 ### Example Usage
 
-``` bash
-cd /Users/mymac/Desktop/insta-collect/insta_collect
+```bash
+cd ~/path/to/your/html
 ```
 
-``` bash
-python3 insta-collect.py kimjongun.html --preview 34
+```bash
+insta_collect % python3 insta-collect.py kimjongun.html --preview 34
 ```
 
 ### Terminal Output
 
-``` text
+```text
 [+] Total entries saved: 119
 [+] JSON output: instagram_comments.json
 [+] XLSX output: instagram_comments.xlsx
@@ -281,25 +279,36 @@ python3 insta-collect.py kimjongun.html --preview 34
 
 After execution, the following files are generated automatically:
 
--   `instagram_comments.json`
--   `instagram_comments.xlsx`
+- `instagram_comments.json`
+- `instagram_comments.xlsx`
 
 ### Data Fields
 
 Each comment entry contains structured fields such as:
 
--   `username`
--   `comment_text`
--   `timestamp` (if available)
--   `source_file`
+- `username`
+- `comment_text`
+- `timestamp` (if available)
+- `source_file`
+
+### Use Cases
+
+This output is immediately usable for:
+
+- Qualitative discourse analysis  
+- Sentiment analysis  
+- Network / actor mapping  
+- Archival research workflows  
 
 ### Notes
 
--   No Bash scripting or manual file handling is required\
--   Output filenames are generated automatically\
--   Preview mode does not affect saved data\
--   This feature is currently **experimental** and may evolve in future releases
+- No Bash scripting or manual file handling is required  
+- Output filenames are generated automatically  
+- Preview mode does not affect saved data  
+- This feature is currently **experimental** and may evolve in future releases  
 
 ## Ethical Use Notice
 
-This tool is intended strictly for academic research, journalism, and public-interest analysis. Users are responsible for complying with Instagram’s Terms of Service and applicable laws.
+This tool is intended strictly for academic research, journalism, and public-interest analysis.
+Users are responsible for complying with Instagram’s Terms of Service and applicable laws.
+
