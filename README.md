@@ -256,23 +256,33 @@ insta_collect % python3 insta-collect.py kimjongun.html --preview 34
 ### Terminal Output
 
 ```text
-[+] Total entries saved: 119
+[+] Total entries saved: 239
 [+] JSON output: instagram_comments.json
 [+] XLSX output: instagram_comments.xlsx
 
 --- PREVIEW ---
-1. @brics_countries: 📰 BREAKING NEWS: North Korea Accuses Israel of War Crimes in Gaza 🇰🇵🇮🇱🇵🇸
-2. @brics_countries: 📰 BREAKING NEWS: North Korea Accuses Israel of War Crimes in Gaza 🇰🇵🇮🇱🇵🇸 North Korea has strongly con...
-3. @karldavid801: Coming from him is hilarious 😂
-4. @minoughm: 🙏🙏🙏🙏🙏🙏❤️❤️❤️❤️
-5. @nowakb072: Jeśli to prawda to po raz pierwszy biję im brawo
-6. @santucci_3.0: Sorry mas quem é Coreia do Norte para falar em genocídio??
-7. @akhmedovarsen47: 🇵🇸🇵🇸🇵🇸🇵🇸🇵🇸🤲🤲🤲🤲🤲
-8. @dn.9795: So now you adore him? Yesterday all of you thought he is one of the bad leaders ever...
-9. @carolina17181922: Jamás pensé en estar de acuerdo con corea del norte en algo 💔
-10. @mahdi.14almahdi: Free free palestine 🌱🍉
+1. @oprahdaily: oprahdailyVerifiedEdited•282wFormer presidents@barackobama, Bill Clinton, and George W. Bush will be
+2. @oprahdaily: Former presidents@barackobama, Bill Clinton, and George W. Bush will be attending and participating 
+3. @roar_242424: This is the REASON APPA I ALIVE. Thank you APPA!!! God Bless You and it’s been a long day and always
+4. @southernmommaa: President Bush! President Obama! 🩷💙🇺🇸🙏
+5. @lo__s___: Clinton is the best president in this pic
+6. @wumi_18: Clinton the better person!!
+7. @benmary01: Every achievement starts with a decision to try ignorance destorys so many opportunities I'm a victi
+8. @allmyvapesaredead: All thinking about the children they’re going to have for lunch
+9. @collinsolivedenise: What our country needs again real leadership
+10. @shay_nevagivup54: Ayyyyyyeeee my fav 2 guys Guess who
+11. @co______d: This is the top 3 of the worst presidents we’ve ever had right here. They are even in order 🤔
+12. @cozmosmom: Three leaders.  Where the hell was our current President???
+13. @maria._.regina_: On their way for some pizza and hotdogs
+14. @johnf990: So a communist and rapist and a globalist....
+15. @therealbunbun40: 3 great president's
+16. @downeypeggy: 🍕🍕🍕🍕🍕🍕🍕💉👦🏽👦🏽👦🏽👦🏽👧🏽👧🏽👧🏽👧🏽👧🏽👧🏽👧🏽
+17. @chalkbody0utlineofme: 3 turkeys who gobbled much more than their share
+18. @mohhco: All the pedophiles in ONE picture!!!
+19. @primo_18__: Epsteins island crew
+20. @mason.con1: No surprise he's a nonce
 ...
-34. @michael.croy: As long as the 🇺🇸 USA continue giving Israel an average of $10m...
+239. @rrrobino1: Hoping frump doesn’t go... and NO, not even his wife! No need. RIP John Lewis. You are finely represented by these three Presidents and your family🙏🏻
 ```
 
 ### Output Files
