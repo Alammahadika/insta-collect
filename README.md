@@ -232,7 +232,7 @@ When executed, the script uses the Playwright browser to automate the following 
 In addition to live scraping via Playwright, **Insta-Collect** also supports parsing Instagram comments directly from a previously saved HTML file.
 
 This feature is useful when:
-- Download the Instagram HTML file you want to analyze (e.g., kimjongun.html).
+- Download the [Instagram HTML](https://www.instagram.com/p/CDPloKlAy5j/) file you want to analyze (e.g., obama.html).
 - Place it in a folder where you have read/write access (e.g., Desktop, Downloads, or a dedicated project folder).
 - Run the CLI from the folder containing your HTML file:
 
@@ -250,7 +250,7 @@ cd ~/path/to/your/html
 ```
 
 ```bash
-insta_collect % python3 insta-collect.py kimjongun.html --preview 34
+insta_collect % python3 insta-collect.py obama.html --preview 20
 ```
 
 ### Terminal Output
