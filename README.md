@@ -251,8 +251,6 @@ insta-collect --tag donaldtrump --limit 7
 
 ```
 
-
-
 ***
 
 ## Behind the Scenes: How the Scraper Works
@@ -361,4 +359,5 @@ This output is immediately usable for:
 
 This tool is intended strictly for academic research, journalism, and public-interest analysis.
 Users are responsible for complying with Instagram’s Terms of Service and applicable laws.
+th Instagram’s Terms of Service and applicable laws.
 
