@@ -61,4 +61,4 @@ def parse_instagram_html(file_path, min_len=10):
 
             current_user = None
 
-    return results
+    return 
